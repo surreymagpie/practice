@@ -1,0 +1,79 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bourbon (4.2.3)
+      sass (~> 3.4)
+      thor
+    breakpoint (2.5.0)
+      sass (~> 3.3)
+      sassy-maps (< 1.0.0)
+    coderay (1.1.0)
+    em-websocket (0.5.1)
+      eventmachine (>= 0.12.9)
+      http_parser.rb (~> 0.6.0)
+    eventmachine (1.0.7)
+    ffi (1.9.9)
+    formatador (0.2.5)
+    guard (2.12.7)
+      formatador (>= 0.2.4)
+      listen (>= 2.7, <= 4.0)
+      lumberjack (~> 1.0)
+      nenv (~> 0.1)
+      notiffany (~> 0.0)
+      pry (>= 0.9.12)
+      shellany (~> 0.0)
+      thor (>= 0.18.1)
+    guard-compat (1.2.1)
+    guard-livereload (2.4.0)
+      em-websocket (~> 0.5)
+      guard (~> 2.8)
+      multi_json (~> 1.8)
+    guard-sass (1.6.0)
+      guard (>= 2.8.0)
+      sass (>= 3.1)
+    guard-shell (0.7.1)
+      guard (>= 2.0.0)
+      guard-compat (~> 1.0)
+    http_parser.rb (0.6.0)
+    listen (3.0.0)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+    lumberjack (1.0.9)
+    method_source (0.8.2)
+    multi_json (1.11.1)
+    nenv (0.2.0)
+    notiffany (0.0.6)
+      nenv (~> 0.1)
+      shellany (~> 0.0)
+    pry (0.10.1)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    rb-fsevent (0.9.5)
+    rb-inotify (0.9.5)
+      ffi (>= 0.5.0)
+    sass (3.4.15)
+    sassy-maps (0.4.0)
+      sass (~> 3.3)
+    shellany (0.0.1)
+    slop (3.6.0)
+    susy (2.2.5)
+      sass (>= 3.3.0, < 3.5)
+    thor (0.19.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bourbon
+  breakpoint
+  guard
+  guard-livereload
+  guard-sass
+  guard-shell
+  rb-inotify (~> 0.9)
+  sass
+  susy
+
+BUNDLED WITH
+   1.10.5

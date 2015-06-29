@@ -1,0 +1,27 @@
+name = Practice
+description = Drupal theme for practice website
+engine = phptemplate
+core = 7.x
+
+; Regions
+regions[page_top] = Page Top
+
+regions[navigation] = Navigation
+regions[header] = Header
+
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+
+regions[sidebar_first]  = First sidebar
+regions[sidebar_second] = Second sidebar
+
+regions[footer_first] = Footer First Column
+regions[footer_second] = Footer Second Column
+regions[footer_third] = Footer Third Column
+regions[footer_fourth] = Footer Fourth Column
+
+regions[page_bottom] = Page Bottom
+
+; Stylesheets
+stylesheets[all][] = css/style.css
