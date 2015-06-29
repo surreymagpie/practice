@@ -13,9 +13,15 @@ h4,
 h5,
 h6
   font-family: $heading-font-family
-  font-size: $base-font-size
-  line-height: $heading-line-height
   margin: 0 0 $small-spacing
+
+@for $i from 1 through 6
+  h#{$i}, .h#{$i}
+    $size: rem(nth($heading-sizes, $i)) // eg 2.25rem
+    $line: $base-font-size * $base-line-height // eg 1.5rem
+    $lines: ceil($size / $line) //eg 2
+    font-size: $size
+    line-height: $lines * $line / $size
 
 p
   margin: 0 0 $small-spacing
