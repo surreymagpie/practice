@@ -17,3 +17,14 @@ function practice_preprocess_html(&$variables) {
   );
   drupal_add_html_head($element, 'viewport_meta_tag');
 }
+
+function practice_preprocess_node(&$variables) {
+
+  // Set a variable for each date part for the node template
+  if($variables['type'] == 'article') {
+   $date = $variables['node']->created;
+   $variables['day'] = date('j', $date);
+   $variables['month'] = date('M', $date);
+   $variables['year'] = date('Y', $date);
+  }
+}
