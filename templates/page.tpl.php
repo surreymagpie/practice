@@ -81,20 +81,23 @@
     <?php endif; ?>
 
     <header class="site__header">
-      <?php if ($logo): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-        </a>
-      <?php endif; ?>
+      <div class="site__masthead">
 
-      <div class="site__branding">
-        <?php if ($site_name): ?>
-          <h1 class="site__name"><?php print $site_name; ?></h1>
+        <?php if ($logo): ?>
+          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+            <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+          </a>
         <?php endif; ?>
 
-        <?php if ($site_slogan): ?>
-          <p class="site__slogan"><?php print $site_slogan; ?></p>
-        <?php endif; ?>
+        <div class="site__branding">
+          <?php if ($site_name): ?>
+            <h1 class="site__name"><?php print $site_name; ?></h1>
+          <?php endif; ?>
+
+          <?php if ($site_slogan): ?>
+            <p class="site__slogan"><?php print $site_slogan; ?></p>
+          <?php endif; ?>
+        </div>
       </div>
 
       <?php print render($page['header']); ?>
