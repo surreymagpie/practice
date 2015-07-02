@@ -28,3 +28,14 @@ function practice_preprocess_node(&$variables) {
    $variables['year'] = date('Y', $date);
   }
 }
+
+function practice_preprocess_page(&$variables) {
+
+  /* If we are on the home page and that is not set as a particular node */
+  if ($variables['is_front'] && !isset($variables['node'])) {
+    // Remove the first element from the main content array
+    $first_node = array_shift($variables['page']['content']['system_main']['nodes']);
+    // and insert it at the start of the highlighted region content
+    array_unshift($variables['page']['highlighted'], $first_node);
+  }
+}
