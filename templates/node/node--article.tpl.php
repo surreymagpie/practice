@@ -82,11 +82,13 @@
 ?>
 <article class="<?php print $classes; ?>" id="node-<?php print $node->nid; ?>" <?php print $attributes; ?> >
 
+  <header class="article__header">
   <?php print render($title_prefix); ?>
   <?php if (!$page): ?>
     <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
   <?php endif; ?>
   <?php print render($title_suffix); ?>
+  </header>
 
   <aside class="article__metadata">
   <?php print $user_picture; ?>
