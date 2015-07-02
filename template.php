@@ -27,6 +27,12 @@ function practice_preprocess_node(&$variables) {
    $variables['month'] = date('M', $date);
    $variables['year'] = date('Y', $date);
   }
+  // dpm($variables);
+  // hide the "Add comment" link on teasers and add class to "read more" link
+  if ($variables['content']['body']['#view_mode'] == 'teaser' ) {
+    unset($variables['content']['links']['comment']['#links']['comment-add']);
+    $variables['content']['links']['node']['#links']['node-readmore']['attributes']['class'][] = 'button';
+  }
 }
 
 function practice_preprocess_page(&$variables) {
